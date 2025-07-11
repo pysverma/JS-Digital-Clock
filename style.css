@@ -1,0 +1,71 @@
+:root {
+  --bg-color: #f2fcfe;
+  --text-color: #333;
+  --card-bg: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.clock-container {
+  background: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.clock {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.date {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.options {
+  margin-top: 1.5rem;
+}
+
+.options label {
+  margin-right: 15px;
+  font-size: 0.95rem;
+}
+
+.options button {
+  padding: 0.5rem 1rem;
+  background-color: #1c92d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.options button:hover {
+  background-color: #007acc;
+}
+
+.clock, .date {
+  transition: all 0.5s ease;
+}
